@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>513</width>
-    <height>497</height>
+    <width>472</width>
+    <height>378</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,11 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QTableView" name="tblShowResults"/>
+       <widget class="QListView" name="tblShowResults">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -31,14 +35,14 @@
           <item>
            <widget class="QLabel" name="lblSetFirstInput">
             <property name="text">
-             <string>Set Input 1:</string>
+             <string>Set Speed</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="lblSetSecondInput">
             <property name="text">
-             <string>Set Input 2:</string>
+             <string>Set Noise</string>
             </property>
            </widget>
           </item>
@@ -54,10 +58,27 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QSpinBox" name="spnSetFirstInput"/>
+           <widget class="QSpinBox" name="spnSetFirstInput">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>129</number>
+            </property>
+            <property name="singleStep">
+             <number>1</number>
+            </property>
+           </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spnSetSecondInput"/>
+           <widget class="QSpinBox" name="spnSetSecondInput">
+            <property name="minimum">
+             <number>26</number>
+            </property>
+            <property name="maximum">
+             <number>74</number>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QLineEdit" name="lnlJessPath"/>
@@ -100,8 +121,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>513</width>
-     <height>22</height>
+     <width>472</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuProgram">
